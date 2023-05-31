@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  background-color: #111111;
+  color: white;
+  font-family: sans-serif, arial;
 } 
     header {
       background-color: navy;
@@ -25,7 +28,24 @@ body {
       color: white;
       position: relative;
     }
-    
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: navy;
+      padding: 10px;
+      top: 100%;
+      left: 0;
+      width:300px;
+    }
+    nav li:hover .submenu {
+      display: block;
+    }
+    footer {
+      background-color: navy;
+      color: lightgray;
+      font-size:11px;
+      padding: 5px;
+    }
     a {
       color:white;
       text-decoration: none;
@@ -43,16 +63,4 @@ body {
     }
     #a1:hover {
 	color: #FF0000;
-    }
-    .submenu {
-      display: none;
-      position: absolute;
-      background-color: navy;
-      padding: 10px;
-      top: 100%;
-      left: 0;
-      width:300px;
-    }
-    nav li:hover .submenu {
-      display: block;
     }
