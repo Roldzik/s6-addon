@@ -3,7 +3,7 @@
 <head>
   <title>S6 Addon</title>
   <link rel="stylesheet" href="style.css">
-  <style>
+   <style>
     header {
       background-color: navy;
       color: white;
@@ -25,10 +25,25 @@
     nav li {
       margin-right: 10px;
       color: white;
+      position: relative; /* Dodajemy tę linię */
     }
+    
     a {
       color:white;
       text-decoration: none;
+    }
+    
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: navy;
+      padding: 10px;
+      top: 100%;
+      left: 0;
+    }
+    
+    nav li:hover .submenu {
+      display: block;
     }
   </style>
 </head>
@@ -40,7 +55,15 @@
         <li><a href="index.html">Strona główna</a></li>
         <li><a href="informacje.html">Informacje</a></li>
         <li><a href="pobierz.html">Pobierz</a></li>
-        <li><a href=".html">MZK Koszalin</a></li>
+        <li>
+          <a href=".html">MZK Koszalin</a>
+          <div class="submenu">
+            <ul>
+              <li><a href="informacje.html">Informacje i pobieralnia</a></li>
+              <li><a href="zmiany.html">Zmiany</a></li>
+            </ul>
+          </div>
+        </li>
         <li><a href=".html">Galeria</a></li>
       </ul>
     </nav>
