@@ -41,6 +41,7 @@ body {
     }
     footer {
       background-color: navy;
+      position: absolute;
       color: lightgray;
       font-size:11px;
       padding: 5px;
