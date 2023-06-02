@@ -47,15 +47,9 @@ body {
       /*float:left;*/
     }
 
-
+/*linki header*/
     a {
       color:white;
-      text-decoration: none;
-      padding:30px;
-	font-weight: bold;
-    }
-    #a1 {
-      color:red;
       text-decoration: none;
       padding:30px;
 	font-weight: bold;
@@ -63,11 +57,19 @@ body {
     a:hover {
 	color: #AA2222;
     }
+
+/*link header wybrany*/
+    #a1 {
+      color:red;
+      text-decoration: none;
+      padding:30px;
+	font-weight: bold;
+    }
     #a1:hover {
 	color: #FF0000;
     }
 
-
+/*Przycisk Pobierz*/
     #pobierz {
 	background-color: #990000;
 	color: white;
@@ -80,4 +82,13 @@ body {
     }
     #pobierz:hover {
 	background-color: #FF0000;
+    }
+
+/*Lista zmian*/
+    #li1 {
+      color:#ffaa88;
+      font-size:20px;
+    }
+    #ul1 {
+      font-size:20px;
     }
