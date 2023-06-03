@@ -8,36 +8,37 @@
   <style>
     #k_1 {
       float:left;
-      width:32.47%;
+      width:33.3%;
       background-color:#111111;
-      padding:8px;
-      height:100px;
+      margin:auto;
+      height:120px;
+      overflow-x: auto;
     }
     #k_2 {
       float:left;
-      width:32.47%;
+      width:33.3%;
       background-color:#111111;
-      padding:8px;
-      height:100px;
+      margin:auto;
+      height:120px;
     }
     #k_3 {
       float:left;
-      width:32.47%;
+      width:33.3%;
       background-color:#111111;
-      padding:8px;
-      height:100px;
+      margin:auto;
+      height:120px;
       font-size:30px;
     }
     table {
       border-collapse:collapse;
       text-align:center;
-      /*width:70%;*/
+      margin:auto;
     }
-    table, td, th {
+    table, th, td {
       border: 1px solid white;
       height:40px;
       font-size:20px;
-      width:500px;
+      min-width:100px;
     }
 /*Pasek postepu*/
     #pasek_zew {
@@ -50,6 +51,13 @@
       background-color:#ee0000;
       height:34px;
       border: 3px solid #aaaaaa;
+    }
+    .tekst_tlo {
+      background:rgba(255,255,255,0.3);
+      font-size:30px;
+    }
+    body {
+      background: #111111 url("zdj/ets2_20221205_203457_00.jpg") no-repeat;
     }
   </style>
   </head>
@@ -79,18 +87,19 @@
     </nav>
   </header>
   
-  <center><div><h1>Witaj na stronie modyfikacji S6 Addon 2 do Euro Truck Simulator 2</h1></div></center>
+  <center><br><span class="tekst_tlo" style="font-size:35px;">Witaj na stronie modyfikacji S6 Addon 2 do Euro Truck Simulator 2</span></center><br><br>
   
   <img src="S6 add.jpg" alt="Logo-S6" style="display: block; margin: 0 auto;">
   
 <!-- Ważne info -->
-<!--<h1 style="color:red"><center>t</center></h1>-->
+<h1 style="color:red; text-align:center;"></h1>
 
   <main>
-    <center><h2>Najnowsza wersja: 8.6 <a id="pobierz" href="pobierz.html">Pobierz</a></h2><br><br>
-    <h2>Następna aktualizacja:</h2></center>
+    <center><span class="tekst_tlo">Najnowsza wersja: 8.6 </span><a id="pobierz" href="pobierz.html">Pobierz</a><br><br><br>
+    <span class="tekst_tlo">Następna aktualizacja:</span></center><br>
+    <div style="height:10px; background-color:#111111"></div>
     <div id="k_1">
-    <center><table>
+    <table>
       <tr>
         <th>Wersja</th>
         <th>Dzień</th>
@@ -101,13 +110,12 @@
         <td>--.--</td>
         <td>--:--</td>
       </tr>
-    </table></center>
+    </table>
     </div>
 
     <div id="k_2">
       <div id="pasek_zew">
-        <div id="pasek_wew">
-        </div>
+        <div id="pasek_wew"></div>
       </div>
     <h2 style="text-align:center">10%</h2>
     </div>
@@ -115,6 +123,7 @@
     <div id="k_3">
       <center>Pozostało:<b><div id="minutnik"></div></b></center>
     </div>
+    <div style="height:243px; background-color:#111111"></div>
   </main>
   
   <footer>
