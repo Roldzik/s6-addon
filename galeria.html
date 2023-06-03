@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Galeria | S6 Addon</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icona.ico">
+<head>
+  <title>Galeria | S6 Addon</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icona.ico">
   <style>
     .gallery {
       display: flex;
@@ -18,8 +18,30 @@
     .gallery img:hover {
       filter: grayscale(40%);
     }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 20px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    .modal-content img {
+      width: 100%;
+    }
   </style>
-  </head>
+</head>
 <body>
   <header>
     <center>
@@ -47,18 +69,34 @@
   </header>
 
   <div class="gallery">
-    <img src="zdj/ets2_20221015_202055_00.jpg" alt="Zdjęcie 1">
-    <img src="zdj/ets2_20221015_202427_00.jpg" alt="Zdjęcie 2">
-    <img src="zdj/ets2_20221015_202446_00.jpg" alt="Zdjęcie 3">
-    <img src="zdj/ets2_20221105_201917_00.jpg" alt="Zdjęcie 4">
-    <img src="zdj/ets2_">
-
+    <img src="zdj/ets2_20221015_202055_00.jpg" alt="Zdjęcie 1" onclick="openModal(this);">
+    <img src="zdj/ets2_20221015_202427_00.jpg" alt="Zdjęcie 2" onclick="openModal(this);">
+    <img src="zdj/ets2_20221015_202446_00.jpg" alt="Zdjęcie 3" onclick="openModal(this);">
+    <img src="zdj/ets2_20221105_201917_00.jpg" alt="Zdjęcie 4" onclick="openModal(this);">
+    <!-- Dodaj pozostałe zdjęcia -->
   </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
   <footer>
     <img src="S6 add.jpg" height="50px" align="right">
     <p>By Roldzik &copy; 2023; BETA</p>
     <p>S6 Addon, S6 Addon 2, zdjęcia oraz wszystkie teksty powinny mieć jakieś prawa zastrzeżone.<p>
     <p>Aktualizacja: W TRAKCIE</p>
   </footer>
+
+  <script>
+    function openModal(element) {
+      document.getElementById('myModal').style.display = "block";
+      document.getElementById('modalImage').src = element.src;
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+  </script>
 </body>
 </html>
