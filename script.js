@@ -1,3 +1,4 @@
+//Odliczanie
 function czasDoWydarzenia(rok, miesiac, dzien, godzina, minuta, sekunda, milisekunda)
 {
 	var aktualnyCzas = new Date();
@@ -7,14 +8,14 @@ function czasDoWydarzenia(rok, miesiac, dzien, godzina, minuta, sekunda, milisek
 	if (pozostalyCzas > 0)
 	{						
 		var s = pozostalyCzas / 1000;	// sekundy
-		var min = s / 60;				// minuty
-		var h = min / 60;				// godziny
-		var dni = h / 24;
+		var min = s / 60;		// minuty
+		var h = min / 60;		// godziny
+		var dni = h / 24;		// dni
 
 		var sLeft = Math.floor(s  % 60);	// pozostało sekund		
 		var minLeft = Math.floor(min % 60);	// pozostało minut
-		var hLeft = Math.floor(h % 24);			// pozostało godzin	
-		var dniLeft = Math.floor(dni % 30);
+		var hLeft = Math.floor(h % 24);		// pozostało godzin	
+		var dniLeft = Math.floor(dni % 30);	// pozostało dni
 		
 		if (minLeft < 10)
 		  minLeft = "0" + minLeft;
@@ -33,3 +34,27 @@ window.onload = function()
 	document.getElementById(idElement).innerHTML = czasDoWydarzenia(2023, 05, 01, 20, 0, 0, 0);
 	setInterval("document.getElementById(idElement).innerHTML = czasDoWydarzenia(2023, 05, 01, 20, 0, 0, 0)", 1000);
 };
+
+//Galeria
+    var images = document.querySelectorAll('.gallery img');
+    var currentIndex = 0;
+
+    function openModal(element) {
+      document.getElementById('myModal').style.display = "block";
+      document.getElementById('modalImage').src = element.src;
+      currentIndex = Array.from(images).indexOf(element);
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    function changeImage(n) {
+      currentIndex += n;
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      } else if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      document.getElementById('modalImage').src = images[currentIndex].src;
+    }
