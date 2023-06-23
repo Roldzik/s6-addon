@@ -40,6 +40,12 @@
       font-size:20px;
       min-width:100px;
     }
+	a {
+	color:white;
+	}
+	a:hover {
+    color: #AA2222;
+	}
 /*Pasek postepu*/
     #pasek_zew {
       width:100%;
@@ -57,7 +63,7 @@
       font-size:30px;
     }
     body {
-      background: #111111 url("zdj/ets2_20221205_203457_00.jpg") no-repeat center;
+      background: #111111 url("zdj/ets2_20221205_203457_00.jpg") no-repeat top;
     }
   </style>
   </head>
@@ -69,20 +75,20 @@
     <nav>
       <ul>
         <li><a id="a1" href="index.html">Strona główna</a></li>
-        <li><a href="pobierz.html">Pobierz</a></li>
-        <li><a href="informacje.html">Informacje</a></li>
+        <li><a id="ah" href="pobierz.html">Pobierz</a></li>
+        <li><a id="ah" href="informacje.html">Informacje</a></li>
         <li>
-          <a>MZK Koszalin</a>
+          <a id="ah">MZK Koszalin</a>
           <div class="submenu">
             <ul>
-              <li><a href="mzk_info.html">Informacje i pobieralnia</a></li>
+              <li><a id="ah" href="mzk_info.html">Informacje i pobieralnia</a></li>
             </ul>
             <ul>
-              <li><a href="mzk_zmiany.html">Zmiany</a></li>
+              <li><a id="ah" href="mzk_zmiany.html">Zmiany</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="galeria.html">Galeria</a></li>
+        <li><a id="ah" href="galeria.html">Galeria</a></li>
       </ul>
     </nav>
   </header>
@@ -123,7 +129,43 @@
     <div id="k_3">
       <center>Pozostało:<b><div id="minutnik"></div></b></center>
     </div>
-    <div style="height:243px; background-color:#111111"></div>
+
+    <div style="height:auto; background-color:#111111">
+	  <center><h1>Aktualności</h1></center>
+       <div class="akt">
+	    <h6>2.06.2023</h6>
+		<h4 style="color:red">Ogólne</h4><a href="posty/post1.html">
+		<h2>Nadchodzi nowe</h2>
+		<p>W trakcie tworzenia jest całkowicie nowa strona S6 Addon pisana ręcznie. Nie jest to łatwe ale prace idą w dobrym kierunku...</p>
+      </div></a>
+  <div class="akt">
+    <h6>20.05.2023</h6>
+    <h4 style="color:red">Wydanie</h4><a href="posty/post2.html">
+ 		<h2>Aktualizacja 8.6 jest już dostępna!</h2>
+    <p>- Przebudowa północno-wschodniego Koszalina<br>
+    Nowe ulice: Wąwozowa<br>
+Przebudowane ulice: 4 Marca, Fałata...</p>
+  </div></a>
+  <div class="akt">
+    <h6>23.04.2023</h6>
+    <h4 style="color:red">Stan prac</h4><a href="posty/post3.html">
+ 		<h2>v8.6 - 1</h2>
+    <p>Work in progress!...</p>
+  </div></a>
+  <div class="akt">
+    <h6>19.04.2023</h6>
+    <h4 style="color:red">Ogólne</h4><a href="posty/post4.html">
+ 		<h2>Nowa wersja strony (Archiwum)</h2>
+    <p>Zmiany: Nowa galeria: Mapgaleria! Umożliwia kliknięcie w punkt aby zobaczyć to miejsce w grze. Tłem jest obecna siatka dróg...</p>
+  </div></a>
+  <div class="akt">
+    <h6>21.02.2023</h6>
+    <h4 style="color:red">Wydanie</h4><a href="posty/post5.html">
+ 		<h2>Aktualizacja 8.5 jest już dostępna!</h2>
+    <p>A w niej: - DW167 do w. Zegrze Pomorskie wraz z nowymi, widokowymi miejscowościami: Konikowo, Świeszyno, Strzekęcino...</p>
+  </div></a>
+
+	</div>
   </main>
   
   <footer>
