@@ -58,13 +58,17 @@ footer {
   margin-top: auto;
 }
 
-/*linki header*/
 a {
+	text-decoration: none;
+}
+
+/*linki header*/
+#ah {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-a:hover {
+#ah:hover {
   color: #AA2222;
 }
 
@@ -115,3 +119,38 @@ a:hover {
 #ul1 {
   font-size: 20px;
 }
+
+
+/*Aktualnosci*/
+.akt{
+  margin: 0 auto 50px;
+  width: 100%;
+  max-width: 80%;
+  border: 3px solid #443333;
+  border-collapse:collapse;
+  background: #111111;
+  text-align:left;
+}
+.akt::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.akt img {
+	float: left;
+	height:200px;
+	margin: 10px;
+}
+/*#wiecej {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #aa0000;
+  line-height: 2;
+  border: 1px solid #aa0000;
+}
+#wiecej:hover {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+		<a id="wiecej" href="posty/post1.html">Pokaż więcej</a>*/
