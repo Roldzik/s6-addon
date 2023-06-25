@@ -58,23 +58,13 @@ footer {
   margin-top: auto;
 }
 
-a {
-	text-decoration: none;
-}
-
-iframe {
-  border:none;
-  height:91px;
-  background:navy;
-}
-
 /*linki header*/
-#ah {
+a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-#ah:hover {
+a:hover {
   color: #AA2222;
 }
 
@@ -130,10 +120,11 @@ iframe {
 /*Aktualnosci*/
 .akt{
   margin: 0 auto 50px;
+  width: 100%;
   max-width: 80%;
   border: 3px solid #443333;
   border-collapse:collapse;
-  background: #191919;
+  background: #111111;
   text-align:left;
 }
 .akt::after {
@@ -146,7 +137,30 @@ iframe {
 	height:200px;
 	margin: 10px;
 }
-#wiecej {
+
+.read-more-state {
+  display: none;
+}
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Pokaż więcej';
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Pokaż mniej';
+}
+
+.read-more-trigger {
   cursor: pointer;
   display: inline-block;
   padding: 0 .5em;
@@ -154,8 +168,3 @@ iframe {
   line-height: 2;
   border: 1px solid #aa0000;
 }
-#wiecej:hover {
-  color: #ff0000;
-  border: 1px solid #ff0000;
-}
-/*		<a id="wiecej" href="posty/post1.html">Pokaż więcej</a>*/

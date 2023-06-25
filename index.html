@@ -6,6 +6,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icona.ico">
   <style>
+    body {
+      background: #111111 url("zdj/ets2_20221205_203457_00.jpg") no-repeat top;
+    }
+    table {
+      border-collapse:collapse;
+      text-align:center;
+      margin:auto;
+    }
+    table, th, td {
+      border: 1px solid white;
+      height:40px;
+      font-size:20px;
+      min-width:100px;
+    }
+    a {
+      color:white;
+    }
+    a:hover {
+      color: #AA2222;
+    }
     #k_1 {
       float:left;
       width:33.3%;
@@ -29,23 +49,10 @@
       height:120px;
       font-size:30px;
     }
-    table {
-      border-collapse:collapse;
-      text-align:center;
-      margin:auto;
+    .akt {
+      max-height:220px;
     }
-    table, th, td {
-      border: 1px solid white;
-      height:40px;
-      font-size:20px;
-      min-width:100px;
-    }
-	a {
-	color:white;
-	}
-	a:hover {
-    color: #AA2222;
-	}
+
 /*Pasek postepu*/
     #pasek_zew {
       width:100%;
@@ -53,17 +60,14 @@
       height:40px;
     }
     #pasek_wew {
-      width:10%;
+      width:70%;
       background-color:#ee0000;
       height:34px;
       border: 3px solid #aaaaaa;
     }
     .tekst_tlo {
-      background:rgba(255,255,255,0.3);
+      background:rgba(255,255,255,0.5);
       font-size:30px;
-    }
-    body {
-      background: #111111 url("zdj/ets2_20221205_203457_00.jpg") no-repeat top;
     }
   </style>
   </head>
@@ -112,7 +116,7 @@
         <th>Godzina</th>
       </tr>
       <tr>
-        <td>v 8.6.1</td>
+        <td>8.6.2</td>
         <td>--.--</td>
         <td>--:--</td>
       </tr>
@@ -123,57 +127,61 @@
       <div id="pasek_zew">
         <div id="pasek_wew"></div>
       </div>
-    <h2 style="text-align:center">10%</h2>
+    <h2 style="text-align:center">70%</h2>
     </div>
 
     <div id="k_3">
       <center>Pozostało:<b><div id="minutnik"></div></b></center>
     </div>
 
-    <div style="height:auto; background-color:#111111">
+    <div style="height:auto; background-color:#111111" id="akt1">
 	  <center><h1>Aktualności</h1></center>
-       <div class="akt">
-	    <h6>2.06.2023</h6>
-		<h4 style="color:red">Ogólne</h4><a href="posty/post1.html">
-		<h2>Nadchodzi nowe</h2>
-		<p>W trakcie tworzenia jest całkowicie nowa strona S6 Addon pisana ręcznie. Nie jest to łatwe ale prace idą w dobrym kierunku...</p>
-      </div></a>
-  <div class="akt">
+
+    <div class="akt" id="akt2">
+      <h6>29.06.2023</h6>
+      <h4 style="color:red">Ogólne</h4><a href="posty/post1.html">
+      <h2>Nowa strona</h2>
+      <p>Witam na nowej stronie S6 Addon! Strona napisana jest w 100% ręcznie...</p>
+    </div></a>
+
+  <div class="akt" id="akt3">
+    <img src="zdj/ets2_20230528_194629_00.jpg">
     <h6>20.05.2023</h6>
     <h4 style="color:red">Wydanie</h4><a href="posty/post2.html">
- 		<h2>Aktualizacja 8.6 jest już dostępna!</h2>
+    <h2>Aktualizacja 8.6 jest już dostępna!</h2>
     <p>- Przebudowa północno-wschodniego Koszalina<br>
-    Nowe ulice: Wąwozowa<br>
-Przebudowane ulice: 4 Marca, Fałata...</p>
+    Nowe ulice: Wąwozowa...</p>
   </div></a>
-  <div class="akt">
+
+  <div class="akt" id="akt4">
+    <img src="zdj/budowa/ets2_20230423_194809_00.jpg">
     <h6>23.04.2023</h6>
     <h4 style="color:red">Stan prac</h4><a href="posty/post3.html">
  		<h2>v8.6 - 1</h2>
     <p>Work in progress!...</p>
   </div></a>
-  <div class="akt">
+
+  <div class="akt" id="akt5">
+    <img src="s6_add.jpg">
     <h6>19.04.2023</h6>
     <h4 style="color:red">Ogólne</h4><a href="posty/post4.html">
- 		<h2>Nowa wersja strony (Archiwum)</h2>
+ 		<h2>Nowa wersja strony (Archiwalne)</h2>
     <p>Zmiany: Nowa galeria: Mapgaleria! Umożliwia kliknięcie w punkt aby zobaczyć to miejsce w grze. Tłem jest obecna siatka dróg...</p>
   </div></a>
   <div class="akt">
+    <img src="zdj/ets2_20230219_195110_00.jpg">
     <h6>21.02.2023</h6>
     <h4 style="color:red">Wydanie</h4><a href="posty/post5.html">
  		<h2>Aktualizacja 8.5 jest już dostępna!</h2>
     <p>A w niej: - DW167 do w. Zegrze Pomorskie wraz z nowymi, widokowymi miejscowościami: Konikowo, Świeszyno, Strzekęcino...</p>
   </div></a>
+  <div class="akt" style="border:none;background:#111111">
+  <center><a id="wiecej" href="posty/postold.html">Pokaż starsze</a></center></div>
 
 	</div>
   </main>
   
-  <footer>
-    <img src="s6_add.jpg" height="50px" align="right">
-    <p>By Roldzik &copy; 2023; BETA</p>
-    <p>S6 Addon, S6 Addon 2, zdjęcia oraz wszystkie teksty powinny mieć jakieś prawa zastrzeżone.<p>
-    <p>Aktualizacja: W TRAKCIE</p>
-  </footer>
+  <iframe src="footerek.html"></iframe>
 </body>
 <script src="script.js"></script>
 </html>
