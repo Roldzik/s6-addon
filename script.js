@@ -31,8 +31,8 @@ function czasDoWydarzenia(rok, miesiac, dzien, godzina, minuta, sekunda, milisek
 window.onload = function()
 {
 	idElement = "minutnik";
-	document.getElementById(idElement).innerHTML = czasDoWydarzenia(2023, 06, 10, 17, 0, 0, 0);
-	setInterval("document.getElementById(idElement).innerHTML = czasDoWydarzenia(2023, 06, 10, 17, 0, 0, 0)", 1000);
+	document.getElementById(idElement).innerHTML = czasDoWydarzenia(2023, 08, 09, 11, 0, 0, 0);
+	setInterval("document.getElementById(idElement).innerHTML = czasDoWydarzenia(2023, 08, 09, 11, 0, 0, 0)", 1000);
 };
 
 //Galeria
