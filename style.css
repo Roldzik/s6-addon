@@ -9,11 +9,11 @@ body {
 }
 
 header {
-  background-color: navy;
+  background-color: #660000;
   color: white;
   padding: 1px;
-  position:sticky;
-  top:0;
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -39,7 +39,7 @@ nav li {
 .submenu {
   display: none;
   position: absolute;
-  background-color: navy;
+  background-color: #660000;
   padding: 10px;
   top: 100%;
   left: 0;
@@ -50,22 +50,14 @@ nav li:hover .submenu {
   display: block;
 }
 
-footer {
-  background-color: navy;
-  color: lightgray;
-  font-size: 11px;
-  padding: 5px;
-  margin-top: auto;
-}
-
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 iframe {
   border:none;
   height:91px;
-  background:navy;
+  background: #660000;
 }
 
 /*linki header*/
@@ -80,12 +72,12 @@ iframe {
 
 /*link header wybrany*/
 #a1 {
-  color: red;
+  color: #dd8888;
   text-decoration: none;
   font-weight: bold;
 }
 #a1:hover {
-  color: #FF0000;
+  color: #aa2222;
 }
 
 
@@ -99,8 +91,20 @@ iframe {
   font-size: 20px;
   border: 2px solid black;
   font-weight: bold;
+  float: right;
+  margin-right: 50px;
 }
-#pobierz:hover {
+#pobierz2 {
+  background-color: #990000;
+  color: white;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  border: 2px solid black;
+  font-weight: bold;
+}
+#pobierz:hover,#pobierz2:hover {
   background-color: #FF0000;
 }
 
