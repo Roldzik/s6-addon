@@ -89,7 +89,7 @@ iframe {
   padding-left: 15px;
   padding-right: 15px;
   font-size: 20px;
-  border: 2px solid black;
+  border: 2px solid #660000;
   font-weight: bold;
   float: right;
   margin-right: 50px;
@@ -101,7 +101,7 @@ iframe {
   padding-left: 15px;
   padding-right: 15px;
   font-size: 20px;
-  border: 2px solid black;
+  border: 2px solid #660000;
   font-weight: bold;
 }
 #pobierz:hover,#pobierz2:hover {
@@ -116,7 +116,7 @@ iframe {
   padding-left: 15px;
   padding-right: 15px;
   font-size: 20px;
-  border: 2px solid black;
+  border: 2px solid #660000;
   font-weight: bold;
 }
 
