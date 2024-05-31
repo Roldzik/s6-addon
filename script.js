@@ -1,12 +1,10 @@
 //Odliczanie
-function czasDoWydarzenia(rok, miesiac, dzien, godzina, minuta, sekunda, milisekunda)
-{
+function czasDoWydarzenia(rok, miesiac, dzien, godzina, minuta, sekunda) {
 	var aktualnyCzas = new Date();
-	var dataWydarzenia = new Date(rok, miesiac, dzien, godzina, minuta, sekunda, milisekunda);
+	var dataWydarzenia = new Date(rok, miesiac, dzien, godzina, minuta, sekunda);
 	var pozostalyCzas = dataWydarzenia.getTime() - aktualnyCzas.getTime();
 	
-	if (pozostalyCzas > 0)
-	{						
+	if (pozostalyCzas > 0) {						
 		var s = pozostalyCzas / 1000;	// sekundy
 		var min = s / 60;		// minuty
 		var h = min / 60;		// godziny
@@ -24,37 +22,34 @@ function czasDoWydarzenia(rok, miesiac, dzien, godzina, minuta, sekunda, milisek
 		
 		return dniLeft + "d : " + hLeft + "g : " + minLeft + "m : " + sLeft + "s";
 	}
-	else
-		return "0d : 0g : 0m : 0s";
-}
-					
-window.onload = function()
-{
-	idElement = "minutnik";
-	document.getElementById(idElement).innerHTML = czasDoWydarzenia(2023, 11, 11, 19, 0, 0, 0);
-	setInterval("document.getElementById(idElement).innerHTML = czasDoWydarzenia(2023, 11, 11, 19, 0, 0, 0)", 1000);
+	else return "0d : 0g : 0m : 0s";
 };
+window.onload = function() {
+	idElement = "minutnik";
+	setInterval("document.getElementById(idElement).innerHTML = czasDoWydarzenia(2024, 5, 14, 19, 0, 0, 0)", 1000);
+}
 
 //Galeria
-    var images = document.querySelectorAll('.gallery img');
-    var currentIndex = 0;
+var images = document.querySelectorAll('.gallery img');
+var currentIndex = 0;
 
-    function openModal(element) {
-      document.getElementById('myModal').style.display = "block";
-      document.getElementById('modalImage').src = element.src;
-      currentIndex = Array.from(images).indexOf(element);
-    }
+function openModal(element) {
+    document.getElementById('myModal').style.display = "block";
+    document.getElementById('modalImage').src = element.src;
+    currentIndex = Array.from(images).indexOf(element);
+}
 
-    function closeModal() {
-      document.getElementById('myModal').style.display = "none";
-    }
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
 
-    function changeImage(n) {
-      currentIndex += n;
-      if (currentIndex < 0) {
-        currentIndex = images.length - 1;
-      } else if (currentIndex >= images.length) {
-        currentIndex = 0;
-      }
-      document.getElementById('modalImage').src = images[currentIndex].src;
+function changeImage(n) {
+    currentIndex += n;
+    if (currentIndex < 0) {
+		currentIndex = images.length - 1;
+	}
+	else if (currentIndex >= images.length) {
+		currentIndex = 0;
     }
+    document.getElementById('modalImage').src = images[currentIndex].src;
+}

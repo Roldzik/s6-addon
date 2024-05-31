@@ -118,6 +118,18 @@ iframe {
   font-size: 20px;
   border: 2px solid #660000;
   font-weight: bold;
+  float: right;
+  margin-right: 50px;
+}
+#pobierz2_off {
+  background-color: #aaaaaa;
+  color: white;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  border: 2px solid #660000;
+  font-weight: bold;
 }
 
 
