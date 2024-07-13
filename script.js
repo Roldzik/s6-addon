@@ -26,7 +26,7 @@ function czasDoWydarzenia(rok, miesiac, dzien, godzina, minuta, sekunda) {
 };
 window.onload = function() {
 	idElement = "minutnik";
-	setInterval("document.getElementById(idElement).innerHTML = czasDoWydarzenia(2024, 5, 15, 12, 0, 0, 0)", 1000);
+	setInterval("document.getElementById(idElement).innerHTML = czasDoWydarzenia(2024, 6, 16, 17, 0, 0, 0)", 1000);
 }
 
 //Galeria
