@@ -60,7 +60,7 @@
       height:30px;
     }
     #pasek_wew {
-      width:100%;
+      width:0%;
       background-color:#ee0000;
       height:30px;
     }
@@ -102,10 +102,10 @@
   <img src="s6_add.jpg" width="400px" style="display: block; margin: 0 auto;">
   <br>
   <!-- Ważne info -->
-  <center><span class="tekst_tlo" style="color:red"><b>! Update w trakcie !</b></span></center><br>
+  <center><span class="tekst_tlo" style="color:red"><b></b></span></center><br>
 
   <main>
-    <center><span class="tekst_tlo" style="color:black">Najnowsza wersja: 9.0.3 </span><a id="pobierz2" href="pobierz.html">Pobierz</a><br><br><br>
+    <center><span class="tekst_tlo" style="color:black">Najnowsza wersja: 9.1 </span><a id="pobierz2" href="pobierz.html">Pobierz</a><br><br><br>
     <span class="tekst_tlo" style="color:black">Następna aktualizacja:</span></center><br>
     <div style="height:auto; padding-top:10px; background-color:#111111">
     <div id="k_1">
@@ -115,8 +115,8 @@
         <th>Data wydania</th>
       </tr>
       <tr>
-        <td>9.1</td>
-        <td>27.09 18:00</td>
+        <td>-</td>
+        <td>-</td>
       </tr>
     </table>
     </div>
@@ -125,7 +125,7 @@
       <div id="pasek_zew">
         <div id="pasek_wew"></div>
       </div>
-    <h2 style="text-align:center">100%</h2>
+    <h2 style="text-align:center" id="pasek_wew_proc">0%</h2>
     </div>
 
     <div id="k_3">
@@ -137,9 +137,25 @@
 	  <center><h1>Aktualności</h1></center>
 	
 	<div class="akt">
+	  <img src="zdj/ets2_20240913_202234_00.jpg">
+      <h6>27.09.2024</h6>
+      <h4 style="color:red">Wydanie</h4><a href="posty/post1.html">
+      <h2>Aktualizacja 9.1 jest już dostępna!</h2>
+      <p>W tej aktualizacja zostały przebudowane:<br>- DK11 i DW165 Koszalin -> Piła...</p>
+    </a></div>
+	
+	<div class="akt">
+	  <!--<img src="zdj/.jpg">-->
+      <h6>27.09.2024</h6>
+      <h4 style="color:red">Ogólne</h4><a href="posty/post2.html">
+      <h2>Mała aktualizacja strony</h2>
+      <p>Zmiana numerów dróg z tekstowych na obrazki w pobieralni oraz...</p>
+    </a></div>
+	
+	<div class="akt">
 	  <img src="zdj/budowa/ets2_20240725_210014_00.jpg">
       <h6>26.07.2024</h6>
-      <h4 style="color:red">Stan prac</h4><a href="posty/post1.html">
+      <h4 style="color:red">Stan prac</h4><a href="posty/post3.html">
       <h2>v9.1 - 1</h2>
       <p>W tej aktualizacji zostanie dodana budowa drogi S11 Bobolice - Szczecinek...</p>
     </a></div>
@@ -147,7 +163,7 @@
 	<div class="akt">
 	  <img src="zdj/ets2_20240613_204446_00.jpg">
       <h6>15.06.2024</h6>
-      <h4 style="color:red">Wydanie</h4><a href="posty/post2.html">
+      <h4 style="color:red">Wydanie</h4><a href="posty/post4.html">
       <h2>Aktualizacja 9.0.1 jest już dostępna!</h2>
       <p>Po 5 latach opóźnienia (2161 dni!) wreście doczekaliśmy się otwarcia obwodnicy Koszalina w ciągu S6...</p>
     </a></div>
@@ -155,25 +171,9 @@
     <div class="akt">
 	  <img src="zdj/budowa/ets2_20240329_185924_00.jpg">
       <h6>30.03.2024</h6>
-      <h4 style="color:red">Stan prac</h4><a href="posty/post3.html">
+      <h4 style="color:red">Stan prac</h4><a href="posty/post5.html">
       <h2>v9.0.1 - 1</h2>
       <p>W oczekiwaniu na 1.50...</p>
-    </a></div>
-	
-	<div class="akt">
-	  <img src="zdj/ets2_20231210_192028_00.jpg">
-      <h6>11.12.2023</h6>
-      <h4 style="color:red">Wydanie</h4><a href="posty/post4.html">
-      <h2>Aktualizacja 9.0 jest już dostępna!</h2>
-      <p>W tej aktualizacji doszło do przebudowy S6 pomiędzy Goleniowem a węzłem Bielice, węzłem Koszalin Wschód a Sianów Wschód. Odświeżono obwodnice Słupska oraz DK6...</p>
-    </a></div>
-	
-	<div class="akt">
-	  <img src="zdj/budowa/ets2_20231102_204415_00.jpg">
-      <h6>3.11.2023</h6>
-      <h4 style="color:red">Stan prac</h4><a href="posty/post5.html">
-      <h2>v9.0 - 2</h2>
-      <p>S6</p>
     </a></div>
 
 	<div class="akt" style="border:none; background:#111111">
@@ -184,5 +184,6 @@
 
   <iframe src="footerek.html"></iframe>
 </body>
+<script>document.getElementById('pasek_wew').style.width = document.getElementById('pasek_wew_proc').innerText;</script>
 <script src="script.js"></script>
 </html>

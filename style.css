@@ -11,7 +11,6 @@ body {
 header {
   background-color: #660000;
   color: white;
-  padding: 1px;
   position: sticky;
   top: 0;
 }
@@ -160,7 +159,7 @@ iframe {
 .akt img {
 	float: left;
 	height:200px;
-	margin: 10px;
+	margin: 0.6%;
 }
 #wiecej {
   cursor: pointer;
@@ -174,4 +173,3 @@ iframe {
   color: #ff0000;
   border: 1px solid #ff0000;
 }
-/*		<a id="wiecej" href="posty/post1.html">Pokaż więcej</a>*/
