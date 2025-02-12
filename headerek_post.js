@@ -1,0 +1,10 @@
+document.write('<div id="header_blok_lewy"><img src="../s6_add.jpg"><p>S6 Addon 2</p></div>');
+document.write('<nav>');
+document.write('<ul>');
+document.write('<li><a href="../index.html">Strona główna</a></li>');
+document.write('<li><a href="../pobierz.html">Pobierz</a></li>');
+document.write('</ul><ul>');
+document.write('<li><a href="../informacje.html">Informacje</a></li>');
+document.write('<li><a href="../galeria.html">Galeria</a></li>');
+document.write('</ul>');
+document.write('</nav>');

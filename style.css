@@ -8,33 +8,63 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
+
+
+
 header {
-  background-color: #660000;
-  color: white;
-  position: sticky;
-  top: 0;
+	background-color: #660000;
+	color: white;
+	position: sticky;
+	top: 0;
+}
+header img {
+	height: 50px;
+	padding: 0 5%;
+	float: left;
+}
+header p {
+	font-size: 40px;
+	font-style: italic;
+	font-weight: bold;
+	margin: 0;
+}
+header a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+header a:hover {
+	color: #AA2222;
+}
+
+#header_blok_lewy {
+	float: left;
+	width: 45%;
+	height: 50px;
+	margin-top: 12.5px;
+	margin-left: 5%;
 }
 
 nav {
   display: flex;
   justify-content: center;
+  float: right;
+  margin-right: 5%;
 }
-
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
   font-size: 18px;
 }
-
 nav li {
-  margin-right: 25px;
-  margin-left: 25px;
+  margin: 10px 25px;
   color: white;
-  position: relative;
 }
-
 .submenu {
   display: none;
   position: absolute;
@@ -44,40 +74,42 @@ nav li {
   left: 0;
   width: 300px;
 }
-
 nav li:hover .submenu {
   display: block;
 }
 
-a {
-  text-decoration: none;
-}
-
-iframe {
-  border:none;
-  height:91px;
-  background: #660000;
-}
-
-/*linki header*/
-#ah {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-#ah:hover {
-  color: #AA2222;
-}
-
-/*link header wybrany*/
-#a1 {
+/*link header wybrany (tymczasowo wyłączone!)*/
+.a1 {
   color: #dd8888;
   text-decoration: none;
   font-weight: bold;
 }
-#a1:hover {
+.a1:hover {
   color: #aa2222;
 }
+
+
+/* iframe */
+iframe {
+	border: none;
+	background: #660000;
+	height: 90px;
+}
+footer {
+  background-color: #660000;
+  color: lightgray;
+  font-size: 11px;
+  font-family: arial;
+  height: 90px;
+  padding: 0 5px;
+}
+footer img {
+	height: 50px;
+	margin: 20px 0.1%;
+	float: right;
+}
+
+
 
 
 /*Przycisk Pobierz*/
@@ -132,6 +164,8 @@ iframe {
 }
 
 
+
+
 /*Lista zmian*/
 #li1 {
   color: #ffaa88;
@@ -140,6 +174,8 @@ iframe {
 #ul1 {
   font-size: 20px;
 }
+
+
 
 
 /*Aktualnosci*/
@@ -172,4 +208,12 @@ iframe {
 #wiecej:hover {
   color: #ff0000;
   border: 1px solid #ff0000;
+}
+
+/* Posty */
+.post img {
+	width: 49.5%;
+}
+.post {
+	min-height: 300px;
 }
